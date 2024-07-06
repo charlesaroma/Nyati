@@ -8,7 +8,7 @@ const HelpUs = () => {
       {/* container */}
       <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center px-[5%] py-16">
         {/* icon, text & button */}
-        <div className="lg:max-w-[40%] flex flex-col justify-center gap-5 lg:pl-[5%]">
+        <div className="lg:max-w-[41%] flex flex-col justify-center gap-5 lg:pl-[5%]">
           {/* icon */}
           <img src={Icon} alt="icon" className="w-10 h-10" />
 
