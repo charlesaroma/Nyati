@@ -11,7 +11,7 @@ const OurVision = () => {
         </div>
 
         {/* Text */}
-        <div className=" h-full w-full flex flex-col gap-10 items-center justify-center">
+        <div className=" h-full w-full flex flex-col gap-10 items-center justify-center py-16">
             {/* text box 1 */}
             <div className="w-[80%] md:max-w-[350px] flex flex-col gap-2 items-start md:absolute md:top-[104px] md:left-[140px]">
                 <h2 className="text-[#E8CFD2] font-md md:font-xl font-bold">Our Vision</h2>
