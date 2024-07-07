@@ -3,7 +3,7 @@ import BG1 from "../../assets/Background.png"
 
 const OurVision = () => {
   return (
-    <div className="w-full md:h-screen h-[50vh] relative">
+    <div className="w-full h-full lg:h-screen relative">
         {/* Background image */}
         <div
           className="absolute top-0 left-0 z-[-1] w-full bg-cover bg-no-repeat h-full bg-center"
@@ -11,7 +11,7 @@ const OurVision = () => {
         </div>
 
         {/* Text */}
-        <div className="relative h-full w-full flex flex-col gap-10 items-center justify-center">
+        <div className=" h-full w-full flex flex-col gap-10 items-center justify-center">
             {/* text box 1 */}
             <div className="w-[80%] md:max-w-[350px] flex flex-col gap-2 items-start md:absolute md:top-[104px] md:left-[140px]">
                 <h2 className="text-[#E8CFD2] font-md md:font-xl font-bold">Our Vision</h2>

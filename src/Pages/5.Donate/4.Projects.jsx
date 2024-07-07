@@ -26,7 +26,7 @@ const Projects = () => {
           Sponsoring opportunities..
         </h2>
         {/* Main heading */}
-        <h1 className="capitalize text-4xl font-bold text-[#F2F2F2] mb-8">
+        <h1 className="capitalize text-3xl lg:text-4xl font-bold text-[#F2F2F2] mb-8">
           Upcoming Projects You can support
         </h1>
         <div className="flex justify-center items-center">

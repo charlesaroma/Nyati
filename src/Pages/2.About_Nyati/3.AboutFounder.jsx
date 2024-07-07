@@ -3,10 +3,10 @@ import DrImage from "../../assets/Dr Eve.png"
 
 const AboutFounder = ({ nRef }) => {
   return (
-    <div ref={nRef} className="relative w-full h-screen bg-[#141118]">
+    <div ref={nRef} className="relative w-full h-full lg:h-screen bg-[#141118]">
       <div className="w-full h-screen flex flex-col  md:flex-row items-center justify-evenly">
         {/* Image with caption */}
-        <div className="w-[80%] md:max-w-[450px] " >
+        <div className=" w-[60vw] md:max-w-[450px] " >
           <img src={DrImage} alt="Founder" className="bg-cover"/>
           <span className="font-extralight md:font-light text-[#E8CFD2]">
             Founder, Dr. Evelyn Cindy Magara
@@ -14,7 +14,7 @@ const AboutFounder = ({ nRef }) => {
         </div>
 
         {/* Text */}
-        <div className="max-w-[410px] flex flex-col gap-2 items-center justify-center md:items-start ">
+        <div className="max-w-[410px] h-full flex flex-col gap-2 items-center justify-center md:items-start ">
           {/* Sub-text */}
           <h2 className="text-[#E8CFD2] font-bold">
             About 
