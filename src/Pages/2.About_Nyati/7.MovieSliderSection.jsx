@@ -21,7 +21,21 @@ const MovieSliderSection = () => {
     arrows: false,
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -38,21 +52,25 @@ const MovieSliderSection = () => {
   ];
 
   return (
-    <div className="w-full h-[70vh] xl:h-screen flex flex-col bg-[#141118]">
-      <div className="w-full flex flex-col justify-between space-y-[2%] pl-[10%] my-auto" >
+    <div className="w-full h-full lg:h-screen flex flex-col bg-[#141118] py-16">
+      <div className="w-full flex flex-col justify-between space-y-[2%] pl-[10%] my-auto">
         {/* Movie Slider heading */}
-        <h1 className="text-[#F2F2F2] text-[26px]">
+        <h1 className="text-[#F2F2F2] text-[26px] text-center lg:text-left">
           Featured Movies
         </h1>
 
         {/* Slider */}
         <Slider {...settings}>
           {movies.map((movie) => (
-            <div key={movie.id}>
-              <img src={movie.imageUrl} alt={movie.title} className="rounded-md min-w-[295px] h-[370px]"/>
-              <span className="text-[19px] font-light mt-2 text-[#F2F2F2]">
+            <div key={movie.id} className="outline-none text-center lg:text-left">
+              <img
+                src={movie.imageUrl}
+                alt={movie.title}
+                className="rounded-md min-w-[295px] h-[370px] mx-auto"
+              />
+              <h3 className="text-[19px] font-light mt-2 text-[#F2F2F2]">
                 {movie.title}
-              </span>
+              </h3>
             </div>
           ))}
         </Slider>

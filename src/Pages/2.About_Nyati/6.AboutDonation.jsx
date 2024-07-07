@@ -19,7 +19,7 @@ const AboutDonation = () => {
         </div>
 
         {/* image container */}
-        <div className="w-full lg:w-[40%] h-[350px] lg:h-full flex justify-center items-center">
+        <div className="w-full lg:w-[40%] lg:h-full flex justify-center items-center">
           <img src={image} alt="" className="w-[60%] md:w-[50%] lg:w-auto object-cover" />
         </div>
       </div>
